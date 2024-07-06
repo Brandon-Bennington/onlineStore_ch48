@@ -1,6 +1,7 @@
 .about { 
-    min-height: 600px; 
-    padding: 50px;
-    background-color: #e6e0dd;
+    min-height: 200px; 
+    padding: 25px;
+    background-color: var(--alternate);
+    color: white;
 
 }

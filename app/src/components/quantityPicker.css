@@ -3,13 +3,15 @@
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .qt-picker button {
     margin: 0 5px;
     padding: 5px 10px;
     border: none;
-    background-color: #6ea2d9;
+    background-color: var(--tertiary);
     color: white;
     cursor: pointer;
     border-radius: 4px;

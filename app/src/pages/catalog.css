@@ -1,14 +1,19 @@
 
 .catalog {
     background-color: rgb(238,240,241);
+    padding: 20px 20px;
 }
 
 .catalog h1 {
-    color: darkcyan;
+    color: var(--tertiary);
     text-align: center;
     margin: 0 0 12px 0;
+    font-size: 40px;
+    font-weight: 700; 
 }
 
 .catalog .filters button{
-    margin-right: 5px; 
+    margin-right: 15px; 
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px; 
 }

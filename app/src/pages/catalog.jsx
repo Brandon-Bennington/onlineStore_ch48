@@ -1,7 +1,7 @@
 import './catalog.css';
 import Product from "../components/product.jsx";
 
-const categories = ["fruits", "bakery", "meat", "drinks"]
+const categories = ["Bakery","Beverages","Fruits", "Meat"]
 
 const data = [
   {
@@ -86,7 +86,7 @@ const data = [
 function Catalog() {
   return (
     <div className="catalog">
-      <h1>Check out our amazing catalog.</h1>
+      <h1>Check out our amazing catalog!</h1>
 
       <div className="filters">
         {categories.map(cat => <button className="btn btn-sm btn-success">{cat}</button>)}

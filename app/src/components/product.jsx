@@ -2,6 +2,11 @@ import "./product.css";
 import QuantityPicker from "./quantityPicker";
 
 function Product(props) { 
+
+    function add() {
+        console.log("adding + props.info.title");
+    }
+
     return (
         <div className="product">
 
@@ -11,7 +16,11 @@ function Product(props) {
 
             <label>${props.info.price.toFixed(2)}</label>
 
-            <QuantityPicker />
+            <div className="controls">
+                <QuantityPicker />
+                <button onClick={(add)} className="btn">Add</button>
+            </div>
+
         </div>
     );
 }

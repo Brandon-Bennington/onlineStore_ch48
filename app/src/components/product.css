@@ -1,15 +1,38 @@
 .product {
     border: 1px solid #999;
-    border-radius: 4px; 
-    width: 200px; 
-    height: 300px; 
+    border-radius: 4px;
+    width: 200px;
+    height: 320px;
     display: inline-block;
-    margin: 10px; 
+    margin: 10px;
     background-color: white;
     text-align: center;
     overflow: hidden; /* Ensure that no content leaks out */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a nicer look */
     transition: transform 0.2s; /* Add a transition for a hover effect */
+}
+
+.product .controls {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.controls .btn {
+    background-color: var(--tertiary);
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none; /* Ensure there is no border on the button */
+    transition: background-color 0.2s; /* Add a transition for a hover effect */
+}
+
+.controls .btn:hover {
+    background-color: var(--tertiary-dark); /* Define a darker shade for the hover state */
+    color: white; /* Ensure the text color remains white */
 }
 
 .product:hover {
@@ -27,8 +50,8 @@
 
 .product h5 {
     margin: 10px 0;
-    font-size: 18px; 
-    font-weight: 500; 
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .product label {

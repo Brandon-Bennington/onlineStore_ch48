@@ -1,3 +1,14 @@
+:root {
+  --background: white;
+  --border: black; 
+  --primary: #68d89bff;
+  --secondary: #0a2342ff;
+  --tertiary: #39a0edff;
+  --tertiary-dark: #317fb4; /* Define a darker shade for hover */
+  --alternate: #397367ff;
+  --alternate2: #85F048ff;
+}
+
 .App {
   text-align: center;
 }
