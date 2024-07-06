@@ -1,0 +1,29 @@
+.qt-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.qt-picker button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #6ea2d9;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.qt-picker button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.qt-picker label {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
