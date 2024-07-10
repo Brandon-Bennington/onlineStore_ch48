@@ -1,5 +1,5 @@
 import './catalog.css';
-import Product from "../components/product.jsx";
+import Product from "../../components/product/product.jsx";
 
 const categories = ["Bakery","Beverages","Fruits", "Meat"]
 

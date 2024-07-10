@@ -1,5 +1,5 @@
 import "./product.css";
-import QuantityPicker from "./quantityPicker";
+import QuantityPicker from "../quantityPicker/quantityPicker";
 
 function Product(props) { 
 
