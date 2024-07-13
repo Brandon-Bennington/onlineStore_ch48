@@ -1,7 +1,16 @@
 .about { 
-    min-height: 200px; 
+    min-height: 90vh; 
     padding: 25px;
-    background-color: var(--alternate);
-    color: white;
-
+    background-color: #f0f8ea;
+    color: #2c5e2e;
 }
+
+.about img {
+    width: 30%;
+    height: 30%;
+    border-radius: 5vh;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+

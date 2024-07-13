@@ -11,6 +11,7 @@ function About() {
 
   return (
     <div className="about">
+      <img src="/images/organikaOwners.png" alt="Organika Owners" />
       <h2>Organika</h2>
       <div className="contactUs">
         <p>Organika is a platform that allows you to find the best organic products in your area!</p>
