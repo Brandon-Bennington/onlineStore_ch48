@@ -1,10 +1,10 @@
+/* src/components/quantityPicker/quantityPicker.css */
 .qt-picker {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 10px;
-
 }
 
 .qt-picker button {
@@ -22,6 +22,19 @@
 .qt-picker button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+.qt-picker button:hover:not(:disabled) {
+    background-color: var(--tertiary-dark);
+}
+
+.qt-picker input {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
 }
 
 .qt-picker label {

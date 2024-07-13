@@ -89,6 +89,32 @@ function Catalog() {
       <h1>Check out our amazing catalog!</h1>
 
       <div className="filters">
+        {categories.map(cat => (
+          // Adding a unique key prop for each category button
+          <button key={cat} className="btn btn-sm btn-success">{cat}</button>
+        ))}
+      </div>
+
+      {data.map(prod => (
+        // Adding a unique key prop for each product
+        <Product key={prod._id} info={prod} />
+      ))}
+
+    </div>
+  );
+}
+
+export default Catalog;
+
+
+
+
+/*function Catalog() {
+  return (
+    <div className="catalog">
+      <h1>Check out our amazing catalog!</h1>
+
+      <div className="filters">
         {categories.map(cat => <button className="btn btn-sm btn-success">{cat}</button>)}
       </div>
 
@@ -101,8 +127,4 @@ function Catalog() {
 }
 
 export default Catalog;
-
-/**
- * create product.css
- * product.jsx -> create the Component 
- */
+*/

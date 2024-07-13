@@ -1,6 +1,13 @@
 
 .navbar {
-    background-color: rgb(11, 101, 94);
-    border: 1px color black;
-    text-align: center;
-}
+    background-color: var(--secondary);
+    color: var(--background);
+    padding: 1rem;
+  }
+
+.navbar a {
+    color: var(--background);
+    text-decoration: none;
+    margin: 0 1rem;
+  }
+

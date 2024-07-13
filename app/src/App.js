@@ -12,23 +12,27 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js"; 
 
+import GlobalProvider from "./state/globalProvider.jsx"
+
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/admin" element={<Admin />} /> 
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/admin" element={<Admin />} /> 
+          </Routes>
 
-        <Footer />
+          <Footer />
 
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 

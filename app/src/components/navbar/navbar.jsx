@@ -1,7 +1,13 @@
 import './navbar.css';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import DataContext from '../../state/dataContext'; 
+
 
 function Navbar() {
+
+  const user = useContext(DataContext).user; 
+
   return (
     <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">

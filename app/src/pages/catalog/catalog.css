@@ -5,7 +5,7 @@
 }
 
 .catalog h1 {
-    color: var(--tertiary);
+    color: var(--secondary);
     text-align: center;
     margin: 0 0 12px 0;
     font-size: 40px;
