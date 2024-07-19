@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import DataContext from '../../state/dataContext'; 
 
-
 function Navbar() {
-
-  const user = useContext(DataContext).user; 
+  const { user, cart } = useContext(DataContext); 
 
   return (
     <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
@@ -48,6 +46,12 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+          <form className="d-flex" role="search">
+            <button className="btn btn-outline-light">{user.name}</button>
+            <Link className="btn btn-outline-light" to="/cart">
+              {cart.length} View Cart
+            </Link>
+          </form>
         </div>
       </div>
     </nav>

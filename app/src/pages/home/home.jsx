@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
+import Product from '../../components/product/product';
+import featuredProducts from '../../data'
 
 function Home() {
   return (
@@ -14,10 +16,14 @@ function Home() {
           <h2>About Us</h2>
           <p>At Organika, we're passionate about bringing you the best organic products from local farmers and producers. Our carefully curated selection ensures you get the highest quality, sustainably sourced goods for a healthier lifestyle.</p>
         </section>
+        <div>
+        <h2>Featured Products</h2>
+        </div>
         <section className="featured-products">
-          <h2>Featured Products</h2>
           <div className="product-grid">
-            {/* You can add some featured product components here */}
+          {featuredProducts.map((product, index) => (
+            <Product key={index} info={product} />
+          ))}
           </div>
         </section>
         <section className="cta">

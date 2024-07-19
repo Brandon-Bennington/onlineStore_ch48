@@ -1,0 +1,30 @@
+.cart-page .parent {
+    display: flex; 
+}
+
+.cart-page .list {
+    flex: 5; 
+
+}
+
+.cart-page .menu {
+    flex: 2; 
+
+}
+
+.cart-page .cart-prod {
+    display: flex; 
+    margin-bottom: 10px; 
+}
+
+.cart-page .cart-prod h5 {
+    flex: 4;
+}
+
+.cart-page .cart-prod label {
+    flex: 1; 
+}
+
+.cart-page .cart-prod button {
+    width: 80px; 
+}
