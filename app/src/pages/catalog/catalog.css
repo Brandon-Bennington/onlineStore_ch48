@@ -1,19 +1,63 @@
-
 .catalog {
-    background-color: rgb(238,240,241);
-    padding: 20px 20px;
-}
-
-.catalog h1 {
-    color: var(--secondary);
+    padding: 20px;
     text-align: center;
-    margin: 0 0 12px 0;
-    font-size: 40px;
-    font-weight: 700; 
-}
-
-.catalog .filters button{
-    margin-right: 15px; 
-    margin-bottom: 10px;
-    padding: 10px 10px 10px 10px; 
-}
+  }
+  
+  .catalog h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .filters {
+    margin-bottom: 20px;
+  }
+  
+  .filters .btn {
+    margin: 5px;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .product-list .product {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .product-list .product img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-list .product h5 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+  
+  .product-list .product label {
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .product-list .product .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-list .product .controls .total {
+    font-weight: bold;
+  }
+  
+  .product-list .product .controls .btn {
+    margin-left: 10px;
+  }
+  

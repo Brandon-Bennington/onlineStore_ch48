@@ -1,11 +1,13 @@
 import './catalog.css';
 import Product from "../../components/product/product.jsx";
-import { useEffect, useState } from 'react'; 
+import { useEffect, useState, useContext } from 'react'; 
 import dataService from '../../services/dataService.js';
+import DataContext from '../../state/dataContext.jsx';
 
 function Catalog() {
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]); 
+  const { removeProductFromCart } = useContext(DataContext);
 
   useEffect(() => {
     console.log("Catalog loaded!");
@@ -29,7 +31,7 @@ function Catalog() {
       </div>
 
       {products.map(prod => (
-        <Product key={prod._id} info={prod} />
+        <Product key={prod._id} info={prod} removeFromCart={removeProductFromCart} />
       ))}
 
     </div>
@@ -37,27 +39,3 @@ function Catalog() {
 }
 
 export default Catalog;
-
-
-
-
-
-/*function Catalog() {
-  return (
-    <div className="catalog">
-      <h1>Check out our amazing catalog!</h1>
-
-      <div className="filters">
-        {categories.map(cat => <button className="btn btn-sm btn-success">{cat}</button>)}
-      </div>
-
-      {data.map(prod => <Product info={prod} />)}
-
-
-
-    </div>
-  );
-}
-
-export default Catalog;
-*/

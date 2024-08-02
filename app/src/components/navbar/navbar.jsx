@@ -49,7 +49,7 @@ function Navbar() {
           <form className="d-flex" role="search">
             <button className="btn btn-outline-light">{user.name}</button>
             <Link className="btn btn-outline-light" to="/cart">
-              {cart.length} View Cart
+              {cart.length} Items In Cart 
             </Link>
           </form>
         </div>

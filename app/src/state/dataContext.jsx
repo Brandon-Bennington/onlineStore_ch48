@@ -5,7 +5,7 @@ const DataContext = createContext({
     user: {},
     addProductToCart: () => {},
     resetCart: () => {},
-    removeProductFromCart: () => {}, // Add this function
+    removeProductFromCart: () => {},
 });
 
 export const DataProvider = ({ children }) => {

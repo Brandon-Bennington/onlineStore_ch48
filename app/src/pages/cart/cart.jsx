@@ -16,7 +16,7 @@ function Cart() {
             <div className="parent">
                 <section className="list">
                     {cart.map((prod, index) => (
-                        <div key={index} className="cart-prod">
+                        <div key={index} className="cart-prod card">
                             <h5>{prod.title}</h5>
                             <label>${prod.price.toFixed(2)}</label>
                             <label>Quantity: {prod.quantity}</label>
@@ -28,7 +28,7 @@ function Cart() {
                     ))}
                 </section>
 
-                <section className="menu">
+                <section className="menu card">
                     <h3>Total</h3>
                     <h3>${calculateTotal()}</h3>
                     <hr />
